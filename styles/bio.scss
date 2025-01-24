@@ -1,0 +1,108 @@
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: #323232;
+        padding-top: 24px;
+        .header_title{
+            display: flex;
+            justify-content: center;
+            .header_title_name{
+                width: 120px;
+                height: 20px;
+            }
+        }
+        .header_nav{
+            display:flex;
+            justify-content: space-evenly;
+            .header_nav-biography{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffffff;
+            }
+            .header_nav-shows{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffffff;
+            }
+        }
+    }
+}
+  
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header{
+        display: flex;
+        flex-direction: row;
+        background-color: #323232;
+        padding-left: 36px;
+        gap: 48px;
+
+        .header_title{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: center; 
+            .header_title_name{
+                width: 120px;
+                height: 20px;
+            }
+        }
+        .header_nav{
+            gap: 48px;
+            display:flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: center; 
+            .header_nav-biography{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffffff;
+            }
+            .header_nav-shows{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffffff;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1280px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        background-color: #323232;
+        padding-left: 36px;
+        gap: 48px;
+
+        .header_title{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: center; 
+            .header_title_name{
+                width: 120px;
+                height: 20px;
+            }
+        }
+        .header_nav{
+            gap: 48px;
+            display:flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: center; 
+            .header_nav-biography{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffffff;
+            }
+            .header_nav-shows{
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffffff;
+            }
+        }
+    }
+    
+}
