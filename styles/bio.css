@@ -27,6 +27,19 @@
     font-weight: 400;
     color: white;
   }
+  main .menu {
+    background-image: url("../assets/Images/hero-bio.jpg");
+  }
+  main .menu .menu_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .menu .menu_section .menu_section_title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   header {
@@ -63,6 +76,19 @@
     font-weight: 400;
     color: white;
   }
+  main .menu {
+    background-image: url("../assets/Images/hero-bio.jpg");
+  }
+  main .menu .menu_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .menu .menu_section .menu_section_title {
+    font-size: 68px;
+    font-weight: 700;
+    color: white;
+  }
 }
 @media screen and (min-width: 1280px) {
   header {
@@ -97,6 +123,19 @@
   header .header_nav .header_nav-shows {
     font-size: 14px;
     font-weight: 400;
+    color: white;
+  }
+  main .menu {
+    background-image: url("../assets/Images/hero-bio.jpg");
+  }
+  main .menu .menu_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .menu .menu_section .menu_section_title {
+    font-size: 68px;
+    font-weight: 700;
     color: white;
   }
 }/*# sourceMappingURL=bio.css.map */

@@ -28,6 +28,21 @@
             }
         }
     }
+    main{
+        .menu{
+            background-image: url("../assets/Images/hero-bio.jpg");
+            .menu_section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .menu_section_title{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #ffffffff;
+                }
+            }
+        }
+    }
 }
   
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -63,6 +78,22 @@
                 font-size: 14px;
                 font-weight: 400;
                 color: #ffffffff;
+            }
+        }
+ 
+    }
+    main{
+        .menu{
+            background-image: url("../assets/Images/hero-bio.jpg");
+            .menu_section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .menu_section_title{
+                    font-size: 68px;
+                    font-weight: 700;
+                    color: #ffffffff;
+                }
             }
         }
     }
@@ -101,6 +132,21 @@
                 font-size: 14px;
                 font-weight: 400;
                 color: #ffffffff;
+            }
+        }
+    }
+    main{
+        .menu{
+            background-image: url("../assets/Images/hero-bio.jpg");
+            .menu_section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .menu_section_title{
+                    font-size: 68px;
+                    font-weight: 700;
+                    color: #ffffffff;
+                }
             }
         }
     }
