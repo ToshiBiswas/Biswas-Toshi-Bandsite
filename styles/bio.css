@@ -1,141 +1,224 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  header {
+  header .header {
     display: flex;
     flex-direction: column;
     background-color: #323232;
     padding-top: 24px;
   }
-  header .header_title {
+  header .header .header_title {
     display: flex;
     justify-content: center;
   }
-  header .header_title .header_title_name {
+  header .header .header_title .header_title_name {
     width: 120px;
     height: 20px;
   }
-  header .header_nav {
+  header .header .header_nav {
     display: flex;
     justify-content: space-evenly;
   }
-  header .header_nav .header_nav-biography {
+  header .header .header_nav .header_nav-biography {
     font-size: 14px;
     font-weight: 400;
     color: white;
   }
-  header .header_nav .header_nav-shows {
+  header .header .header_nav .header_nav-shows {
     font-size: 14px;
     font-weight: 400;
     color: white;
   }
   main .menu {
+    position: relative;
     background-image: url("../assets/Images/hero-bio.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 66.66%;
+    resize: both;
   }
   main .menu .menu_section {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   main .menu .menu_section .menu_section_title {
+    padding-left: 16px;
+  }
+  main .menu .menu_section .menu_section_title .menu_section_title_value {
     font-size: 24px;
     font-weight: 700;
-    color: white;
+    color: #FFFFFF;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  header {
+  header .header {
     display: flex;
     flex-direction: row;
     background-color: #323232;
     padding-left: 36px;
     gap: 48px;
   }
-  header .header_title {
+  header .header .header_title {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
   }
-  header .header_title .header_title_name {
+  header .header .header_title .header_title_name {
     width: 120px;
     height: 20px;
   }
-  header .header_nav {
+  header .header .header_nav {
     gap: 48px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
   }
-  header .header_nav .header_nav-biography {
+  header .header .header_nav .header_nav-biography {
     font-size: 14px;
     font-weight: 400;
     color: white;
   }
-  header .header_nav .header_nav-shows {
+  header .header .header_nav .header_nav-shows {
     font-size: 14px;
     font-weight: 400;
     color: white;
   }
   main .menu {
+    position: relative;
     background-image: url("../assets/Images/hero-bio.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 66.66%;
+    resize: both;
   }
   main .menu .menu_section {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   main .menu .menu_section .menu_section_title {
+    padding-left: 36px;
+  }
+  main .menu .menu_section .menu_section_title .menu_section_title_value {
     font-size: 68px;
     font-weight: 700;
-    color: white;
+    color: #FFFFFF;
   }
 }
 @media screen and (min-width: 1280px) {
+  .element, header .header {
+    width: 1020px;
+  }
   header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #323232;
+  }
+  header .header {
     display: flex;
     flex-direction: row;
     background-color: #323232;
-    padding-left: 36px;
     gap: 48px;
+    padding: auto;
   }
-  header .header_title {
+  header .header .header_title {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
   }
-  header .header_title .header_title_name {
+  header .header .header_title .header_title_name {
     width: 120px;
     height: 20px;
   }
-  header .header_nav {
+  header .header .header_nav {
     gap: 48px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
   }
-  header .header_nav .header_nav-biography {
+  header .header .header_nav .header_nav-biography {
     font-size: 14px;
     font-weight: 400;
     color: white;
   }
-  header .header_nav .header_nav-shows {
+  header .header .header_nav .header_nav-shows {
     font-size: 14px;
     font-weight: 400;
     color: white;
+  }
+  header .menu {
+    position: relative;
+    background-image: url("../assets/Images/hero-bio.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 66.66%;
+    resize: both;
+  }
+  header .menu .menu_section {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .menu .menu_section .menu_section_title {
+    padding-left: 36px;
+    display: flex;
+    justify-content: center;
+  }
+  header .menu .menu_section .menu_section_title .menu_section_title_value {
+    width: 1020px;
+    font-size: 68px;
+    font-weight: 700;
+    color: #FFFFFF;
   }
   main .menu {
+    position: relative;
     background-image: url("../assets/Images/hero-bio.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 66.66%;
+    resize: both;
   }
   main .menu .menu_section {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   main .menu .menu_section .menu_section_title {
+    display: flex;
+    justify-content: center;
+  }
+  main .menu .menu_section .menu_section_title .menu_section_title_value {
+    width: 1020px;
     font-size: 68px;
     font-weight: 700;
-    color: white;
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=bio.css.map */

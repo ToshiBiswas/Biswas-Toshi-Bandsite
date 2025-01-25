@@ -1,45 +1,65 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     header{
-        display: flex;
-        flex-direction: column;
-        background-color: #323232;
-        padding-top: 24px;
-        .header_title{
+        .header{
             display: flex;
-            justify-content: center;
-            .header_title_name{
-                width: 120px;
-                height: 20px;
+            flex-direction: column;
+            background-color: #323232;
+            padding-top: 24px;
+            .header_title{
+                display: flex;
+                justify-content: center;
+                .header_title_name{
+                    width: 120px;
+                    height: 20px;
+                }
+            }
+            .header_nav{
+                display:flex;
+                justify-content: space-evenly;
+                .header_nav-biography{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ffffffff;
+                }
+                .header_nav-shows{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ffffffff;
+                }
             }
         }
-        .header_nav{
-            display:flex;
-            justify-content: space-evenly;
-            .header_nav-biography{
-                font-size: 14px;
-                font-weight: 400;
-                color: #ffffffff;
-            }
-            .header_nav-shows{
-                font-size: 14px;
-                font-weight: 400;
-                color: #ffffffff;
-            }
-        }
+        
     }
     main{
         .menu{
+            position: relative;
             background-image: url("../assets/Images/hero-bio.jpg");
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            padding-top: 66.66%;
+            resize: both;
+
             .menu_section{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                transform: translate(0%, -50%);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 .menu_section_title{
-                    font-size: 24px;
-                    font-weight: 700;
-                    color: #ffffffff;
+                    padding-left: 16px;
+                    .menu_section_title_value{
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #FFFFFF;
+                    }
+
                 }
+                
             }
         }
     }
@@ -48,53 +68,73 @@
 @media screen and (min-width: 768px) and (max-width: 1279px){
 
     header{
-        display: flex;
-        flex-direction: row;
-        background-color: #323232;
-        padding-left: 36px;
-        gap: 48px;
-
-        .header_title{
+        .header{
             display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            align-content: center; 
-            .header_title_name{
-                width: 120px;
-                height: 20px;
-            }
-        }
-        .header_nav{
+            flex-direction: row;
+            background-color: #323232;
+            padding-left: 36px;
             gap: 48px;
-            display:flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            align-content: center; 
-            .header_nav-biography{
-                font-size: 14px;
-                font-weight: 400;
-                color: #ffffffff;
+    
+            .header_title{
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-content: center; 
+                .header_title_name{
+                    width: 120px;
+                    height: 20px;
+                }
             }
-            .header_nav-shows{
-                font-size: 14px;
-                font-weight: 400;
-                color: #ffffffff;
+            .header_nav{
+                gap: 48px;
+                display:flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-content: center; 
+                .header_nav-biography{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ffffffff;
+                }
+                .header_nav-shows{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ffffffff;
+                }
             }
         }
+
  
     }
     main{
         .menu{
+            position: relative;
             background-image: url("../assets/Images/hero-bio.jpg");
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            padding-top: 66.66%;
+            resize: both;
+
             .menu_section{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                transform: translate(0%, -50%);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 .menu_section_title{
-                    font-size: 68px;
-                    font-weight: 700;
-                    color: #ffffffff;
+                    padding-left: 36px;
+                    .menu_section_title_value{
+                        font-size: 68px;
+                        font-weight: 700;
+                        color: #FFFFFF;
+                    }
+
                 }
+                
             }
         }
     }
@@ -104,53 +144,115 @@
         width: 1020px
     }
     header{
-        display: flex;
-        flex-direction: row;
+        width:100%;
+        display:flex;
+        justify-content: center;
         background-color: #323232;
-        gap: 48px;
-        @extend .element;
-        .header_title{
+        .header{
             display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            align-content: center; 
-            .header_title_name{
-                width: 120px;
-                height: 20px;
-            }
-        }
-        .header_nav{
+            flex-direction: row;
+            background-color: #323232;
             gap: 48px;
-            display:flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            align-content: center; 
-            .header_nav-biography{
-                font-size: 14px;
-                font-weight: 400;
-                color: #ffffffff;
-            }
-            .header_nav-shows{
-                font-size: 14px;
-                font-weight: 400;
-                color: #ffffffff;
-            }
-        }
-    }
-    main{
-        .menu{
-            background-image: url("../assets/Images/hero-bio.jpg");
-            .menu_section{
+            padding: auto;
+            @extend .element;
+            .header_title{
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                .menu_section_title{
-                    font-size: 68px;
-                    font-weight: 700;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-content: center; 
+                .header_title_name{
+                    width: 120px;
+                    height: 20px;
+                }
+            }
+            .header_nav{
+                gap: 48px;
+                display:flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-content: center; 
+                .header_nav-biography{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ffffffff;
+                }
+                .header_nav-shows{
+                    font-size: 14px;
+                    font-weight: 400;
                     color: #ffffffff;
                 }
             }
         }
+        .menu{
+            position: relative;
+            background-image: url("../assets/Images/hero-bio.jpg");
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            padding-top: 66.66%;
+            resize: both;
+
+            .menu_section{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                transform: translate(0%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .menu_section_title{
+                    padding-left: 36px;
+                    display: flex;
+                    justify-content: center;
+                    .menu_section_title_value{
+                        width: 1020px;
+                        font-size: 68px;
+                        font-weight: 700;
+                        color: #FFFFFF;
+                    }
+
+                }
+                
+            }
+        }
+
     }
+    main{
+        .menu{
+            position: relative;
+            background-image: url("../assets/Images/hero-bio.jpg");
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            padding-top: 66.66%;
+            resize: both;
+
+            .menu_section{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                transform: translate(0%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .menu_section_title{
+                    display: flex;
+                    justify-content: center;
+                    .menu_section_title_value{
+                        width: 1020px;
+                        font-size: 68px;
+                        font-weight: 700;
+                        color: #FFFFFF;
+                    }
+
+                }
+                
+            }
+        }
+
+    }
+     
     
 }
