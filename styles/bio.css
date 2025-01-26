@@ -56,6 +56,61 @@
     font-weight: 700;
     color: #FFFFFF;
   }
+  main .content .content_box {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  main .content .content_box .content_box_about_title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 24px;
+  }
+  main .content .content_box .content_box_about .content_box_about_picture {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 16px;
+  }
+  main .content .content_box .content_box_about .content_box_about_quote {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 22px;
+  }
+  main .content .content_box .content_box_about .content_box_about_quote-author {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 22px;
+  }
+  main .content .content_box .content_box_about .content_box_about_section {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 22px;
+    padding-top: 24px;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_left {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 16px;
+    line-height: 18px;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_right {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 16px;
+    line-height: 18px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   header .header {
@@ -120,6 +175,70 @@
     font-size: 68px;
     font-weight: 700;
     color: #FFFFFF;
+  }
+  main .content .content_box {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  main .content .content_box .content_box_title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 44px;
+  }
+  main .content .content_box .content_box_about {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+  main .content .content_box .content_box_about .content_box_about_picture {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 36px;
+  }
+  main .content .content_box .content_box_about .content_box_about_quote {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+    padding-top: 36px;
+  }
+  main .content .content_box .content_box_about .content_box_about_quote-author {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+  }
+  main .content .content_box .content_box_about .content_box_about_section {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 3px;
+    padding-top: 36px;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs {
+    padding-top: 36px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_left {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22px;
+    padding-right: 24px;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_right {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -195,5 +314,72 @@
     font-size: 68px;
     font-weight: 700;
     color: #FFFFFF;
+  }
+  main .content {
+    display: flex;
+    justify-content: center;
+  }
+  main .content .content_box {
+    width: 1044px;
+  }
+  main .content .content_box .content_box_title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 44px;
+  }
+  main .content .content_box .content_box_about {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+  main .content .content_box .content_box_about .content_box_about_picture {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 36px;
+  }
+  main .content .content_box .content_box_about .content_box_about_quote {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+    padding-top: 36px;
+  }
+  main .content .content_box .content_box_about .content_box_about_quote-author {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+  }
+  main .content .content_box .content_box_about .content_box_about_section {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+    padding-top: 48px;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs {
+    padding-top: 36px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_left {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22px;
+    padding-right: 24px;
+  }
+  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_right {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=bio.css.map */

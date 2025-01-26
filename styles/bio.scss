@@ -58,9 +58,69 @@
                         font-weight: 700;
                         color: #FFFFFF;
                     }
-
                 }
-                
+            }
+        }
+        .content{
+            .content_box{
+                margin-left: 16px;
+                margin-right: 16px;
+                .content_box_about_title{
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #000000;
+                    padding-top: 24px;
+                }
+                .content_box_about{
+
+                    .content_box_about_picture{
+                        margin: 0;
+                        width:100%;
+                        height:auto;
+                        padding-top:16px;
+                    }
+                    .content_box_about_quote{
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 22px;
+                    }
+                    .content_box_about_quote-author{
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 22px;                    }
+                    .content_box_about_section{
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #000000;
+                        line-height: 22px;                        
+                        padding-top: 24px;
+                    }
+                    .content_box_about_paragraphs{
+                        
+                        .content_box_about_paragraphs_left{
+                            margin: 0;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #000000;
+                            padding-top:16px;
+                            line-height: 18px;
+                        }
+                        .content_box_about_paragraphs_right{
+                            margin: 0;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #000000;
+                            padding-top:16px;
+                            line-height: 18px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -137,6 +197,74 @@
                 
             }
         }
+        .content{
+            .content_box{
+                margin-left: 36px;
+                margin-right: 36px;
+                .content_box_title{
+                    margin: 0;
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: #000000;
+                    padding-top: 44px;
+                }
+                .content_box_about{
+                    margin-left: 72px;
+                    margin-right: 72px;
+                    .content_box_about_picture{
+                        margin: 0;
+                        width:100%;
+                        height:auto;
+                        padding-top:36px;
+                    }
+                    .content_box_about_quote{
+                        margin: 0;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 32px;
+                        padding-top: 36px;
+                    }
+                    .content_box_about_quote-author{
+                        margin: 0;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 32px;    
+
+
+                    }
+                    .content_box_about_section{
+                        margin: 0;
+                        font-size: 36px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 3px;                        
+                        padding-top: 36px;
+                    }
+                    .content_box_about_paragraphs{
+                        padding-top:36px;
+                        display:flex;
+                        justify-content: flex-start;
+                        .content_box_about_paragraphs_left{
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #000000;
+                            line-height: 22px;
+                            padding-right: 24px;
+                        }
+                        .content_box_about_paragraphs_right{
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #000000;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 1280px){
@@ -195,7 +323,6 @@
             width: 100%;
             padding-top: 857.6px;
             resize: both;
-            
             .menu_section{
                 position: absolute;
                 top: 50%;
@@ -206,7 +333,6 @@
                 flex-direction: column;
                 justify-content: center;
                 background-color: hsla(0, 0%, 20%, 0.5);
-
                 .menu_section_title{
                     display: flex;
                     justify-content: center;
@@ -215,6 +341,73 @@
                         font-weight: 700;
                         color: #FFFFFF;
                         @extend .gridLength;
+                    }
+                }
+            }
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            .content_box{
+                width: 1044px;
+                .content_box_title{
+                    margin: 0;
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: #000000;
+                    padding-top: 44px;
+                }
+                .content_box_about{
+                    margin-left: 72px;
+                    margin-right: 72px;
+                    .content_box_about_picture{
+                        margin: 0;
+                        width:100%;
+                        height:auto;
+                        padding-top:36px;
+                    }
+                    .content_box_about_quote{
+                        margin: 0;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 32px;
+                        padding-top: 36px;
+                    }
+                    .content_box_about_quote-author{
+                        margin: 0;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 32px;
+                    }
+                    .content_box_about_section{
+                        margin: 0;
+                        font-size:  24px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 32px;                        
+                        padding-top: 48px;
+                    }
+                    .content_box_about_paragraphs{
+                        padding-top:36px;
+                        display:flex;
+                        justify-content: flex-start;
+                        .content_box_about_paragraphs_left{
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #000000;
+                            line-height: 22px;
+                            padding-right: 24px;
+                        }
+                        .content_box_about_paragraphs_right{
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #000000;
+                            line-height: 22px;
+                        }
                     }
                 }
             }
