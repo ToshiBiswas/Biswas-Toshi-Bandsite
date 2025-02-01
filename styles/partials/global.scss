@@ -4,4 +4,37 @@ body{
     padding: 0;
   
 }
-
+@mixin large-Section-Header-Text{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 44px;
+    padding-top: 44px;
+}
+@mixin large-Section-Subheader-Text{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+}
+@mixin large-Photos{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+@mixin large-Footer{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 22px;
+}
+@mixin large-Body{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22px;
+}
