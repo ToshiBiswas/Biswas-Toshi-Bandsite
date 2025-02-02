@@ -10,7 +10,7 @@ body{
     font-weight: 700;
     color: #000000;
     line-height: 44px;
-    padding-top: 44px;
+    padding-top: 48px;
 }
 @mixin large-Section-Subheader-Text{
     margin: 0;
@@ -19,7 +19,7 @@ body{
     color: #000000;
     line-height: 32px;
 }
-@mixin large-Photos{
+@mixin Photos{
     width:100%;
     height:auto;
     margin:0;

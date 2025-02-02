@@ -555,7 +555,7 @@
                         font-size: 36px;
                         font-weight: 700;
                         color: #000000;
-                        line-height: 3px;                        
+                        line-height: 32px;                        
                         padding-top: 36px;
                     }
                     .content_box_about_paragraphs{
@@ -563,19 +563,11 @@
                         display:flex;
                         justify-content: flex-start;
                         .content_box_about_paragraphs_left{
-                            margin: 0;
-                            font-size: 16px;
-                            font-weight: 400;
-                            color: #000000;
-                            line-height: 22px;
+                            @include large-Body;
                             padding-right: 24px;
                         }
                         .content_box_about_paragraphs_right{
-                            margin: 0;
-                            font-size: 16px;
-                            font-weight: 400;
-                            color: #000000;
-                            line-height: 22px;
+                            @include large-Body;
                         }
                     }
                 }
@@ -583,10 +575,7 @@
                     padding-top:48px;
                     background-color: #FAFAFA;
                     .content_box_photo_title{
-                        margin:0;
-                        font-size: 48px;
-                        font-weight: 700;
-                        color: #000000;
+                        @include large-Section-Header-Text;
                         width:100%;
                         height:auto;
                         padding-top: 48px;
@@ -602,65 +591,62 @@
                         row-gap: 36px;
                         column-gap: 36px;
                         .content_box_photo_rows_photo1{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "1";
                         }
                         .content_box_photo_rows_photo2{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "2";
                         }
                         .content_box_photo_rows_photo3{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
+                       
                             grid-area: "3";
 
                         }
                         .content_box_photo_rows_photo4{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "4";
                         }
                         .content_box_photo_rows_photo5{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "5";
                         }
                         .content_box_photo_rows_photo6{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "6";
                         }
                         .content_box_photo_rows_photo7{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "7";
-
                         }
                         .content_box_photo_rows_photo8{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "8";
                         }
                         .content_box_photo_rows_photo9{
-                            width:100%;
-                            height:auto;
-                            margin:0;
+                            @include Photos;
                             grid-area: "9";
                         }
                     }
                 }
             }
             
+        }
+        .comment{
+            margin:0px;
+            padding:0px 36px;
+            .comment_section{
+                margin: 0px;
+                padding:0;
+                .comment_section_page{
+                    margin: 0;
+                    padding: 0;
+                    .comment_section_page_title{
+                        
+                    }
+                }
+            }
         }
     }
     footer{
@@ -834,9 +820,8 @@
 }
 
 @media screen and (min-width: 1280px){
-    
     .gridLength{
-        width: 1044px
+        width: 1044px;
     }
     header{
         width:100%;
@@ -1012,41 +997,40 @@
                         row-gap: 36px;
                         column-gap: 36px;   
                         .content_box_photo_rows_photo1{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "1";
                         }
                         .content_box_photo_rows_photo2{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "2";
                         }
                         .content_box_photo_rows_photo3{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "3";
-
                         }
                         .content_box_photo_rows_photo4{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "4";
                         }
                         .content_box_photo_rows_photo5{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "5";
                         }
                         .content_box_photo_rows_photo6{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "6";
                         }
                         .content_box_photo_rows_photo7{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "7";
 
                         }
                         .content_box_photo_rows_photo8{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "8";
                         }
                         .content_box_photo_rows_photo9{
-                            @include large-Photos;
+                            @include Photos;
                             grid-area: "9";
                         }
                         padding-bottom: 36px;
