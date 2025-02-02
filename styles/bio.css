@@ -1,3 +1,9 @@
+body {
+  font-family: "Nunito Sans";
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header .header {
     display: flex;
@@ -941,7 +947,8 @@
     font-size: 48px;
     font-weight: 700;
     color: #000000;
-    width: 100%;
+    line-height: 44px;
+    padding-top: 44px;
     height: auto;
     padding-top: 48px;
     padding-bottom: 36px;
@@ -1029,10 +1036,11 @@
   }
   footer section .socials .socials_left .socials_left_title {
     margin: 0;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
-    color: #ffffff;
-    height: auto;
+    color: #000000;
+    line-height: 32px;
+    color: #FFFFFF;
     padding-right: 36px;
   }
   footer section .socials .socials_left .socials_left_logos {
@@ -1066,18 +1074,19 @@
   footer section .info .info_management .info_management_title {
     margin: 0;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: #ffffff;
-    padding-top: 24px;
     line-height: 22px;
+    font-weight: 700;
+    padding-top: 24px;
   }
   footer section .info .info_management .info_management_address {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
     color: #ffffff;
-    padding-top: 24px;
     line-height: 22px;
+    padding-top: 24px;
   }
   footer section .info .info_management .info_management_address2 {
     margin: 0;
