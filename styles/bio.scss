@@ -643,7 +643,21 @@
                     margin: 0;
                     padding: 0;
                     .comment_section_page_title{
-                        
+                        @include large-Section-Header-Text;
+                    }
+                    .comment_section_page_add{
+                        .comment_section_page_add_name{
+
+                        }
+                        .comment_section_page_add_comment{
+
+                        }
+                        .comment_section_page_add_commentBlock{
+
+                        }
+                        .comment_section_page_add_button{
+                            padding: 8px 72px; 
+                        }
                     }
                 }
             }
