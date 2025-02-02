@@ -4,6 +4,18 @@ body{
     padding: 0;
   
 }
+@mixin large-label{
+    font-size: 12px;
+    font-weight: 700;
+    line-height:20px;
+    padding-bottom: 8px;
+}
+@mixin small-label{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 8px;
+}
 @mixin large-Section-Header-Text{
     margin: 0;
     font-size: 48px;

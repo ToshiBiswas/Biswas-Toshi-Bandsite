@@ -242,6 +242,65 @@
             }
 
         }
+        .comment{
+            margin:0px;
+            padding:0px 16px;
+            .comment_section{
+                margin: 0px;
+                padding:0;
+                .comment_section_title{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #000000;
+                    width:100%;
+                    height:auto;
+                    padding-top: 24px;
+                }
+                .comment_section_page{
+                    margin: 0;
+                    padding: 0;
+
+                    .comment_section_page_add{
+                        .comment_section_page_add_name{
+                            @include small-label;
+                        }
+                        .comment_section_page_add_nameBlock{
+                            border-color: #E1E1E1;
+                            width:max-content;
+                            height:auto;
+                            &:active{
+                                border-color: #323232;
+                            }
+                            padding:16px;
+                        }
+                        .comment_section_page_add_comment{
+                            @include small-label;
+                        }
+                        .comment_section_page_add_commentBlock{
+                            border-color: #E1E1E1;
+                            width:max-content;
+                            height:auto;
+                            &:active{
+                                border-color: #323232;
+                            }
+                            padding:16px;
+                        }
+
+                        .comment_section_page_add_button{
+                            padding: 8px 36px; 
+                            border-radius: 4px;
+                            width: 150px;
+                            height: 40px;
+                            background-color: #323232;
+                            color: #ffffff;
+                            &:hover{
+                                background-color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     footer{
 
@@ -639,24 +698,49 @@
             .comment_section{
                 margin: 0px;
                 padding:0;
+                .comment_section_title{
+                    @include large-Section-Header-Text;
+                }
                 .comment_section_page{
                     margin: 0;
                     padding: 0;
-                    .comment_section_page_title{
-                        @include large-Section-Header-Text;
-                    }
+
                     .comment_section_page_add{
                         .comment_section_page_add_name{
-
+                            @include large-label;
+                        }
+                        .comment_section_page_add_nameBlock{
+                            border-color: #E1E1E1;
+                            width:max-content;
+                            height:auto;
+                            &:active{
+                                border-color: #323232;
+                            }
+                            padding:16px;
                         }
                         .comment_section_page_add_comment{
-
+                            @include large-label;
                         }
                         .comment_section_page_add_commentBlock{
-
+                            border-color: #E1E1E1;
+                            width:max-content;
+                            height:auto;
+                            &:active{
+                                border-color: #323232;
+                            }
+                            padding:16px;
                         }
+
                         .comment_section_page_add_button{
-                            padding: 8px 72px; 
+                            padding: 8px 36px; 
+                            border-radius: 4px;
+                            width: 150px;
+                            height: 40px;
+                            background-color: #323232;
+                            color: #ffffff;
+                            &:hover{
+                                background-color: #000000;
+                            }
                         }
                     }
                 }
