@@ -90,23 +90,22 @@
             <div class="comment_section">
                 <h1 class="comment_section_title">Join the Conversation</h1>
                 <div class="comment_section_page">
-                    <form class="comment_section_page_add">
+                    <img class="comment_section_page_profile" src="./assets/Images/Mohan-muruge.jpg">
+                    <form class="comment_section_page_add" id="itemForm">
                         <label class="comment_section_page_add_name">name </label>
-                        <input type="text" class="comment_section_page_add_nameBlock" placeholder="enter your name">
+                        <input type="text" id="username" name="username" class="comment_section_page_add_nameBlock" placeholder="enter your name">
                         <label class="comment_section_page_add_comment" >comment </label>
-                        <input type="text" class="comment_section_page_add_commentBlock" placeholder ="add a comment">
-                        <button class="comment_section_page_add_button">COMMENT</button>
+                        <textarea type="text" id="comment" name="comment" class="comment_section_page_add_commentBlock"  rows="20" placeholder="enter your comment here"></textarea>
+                        <button type="submit" class="comment_section_page_add_button">COMMENT</button>
                     </form>
                 </div>
-                <div class="comment_section_comments">
+                <div class="comment_section_comments" id = "comments">
 
                 </div>
             </div>
         </div>
     </main>
-
     <footer>
-
         <section>
             <section class="socials">
                 <div class=" socials_left">
@@ -145,3 +144,6 @@
 
     </footer>
 </body>
+<head>
+    <script type="text/javascript" src="scripts/index-page.js"></script>
+</head>
