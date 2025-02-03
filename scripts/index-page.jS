@@ -53,7 +53,7 @@ comments[2].src = "assets/Images/handtinyblack.gif";
 
 function createCommentSmall(comment){
     const block = document.createElement("div");
-    block.setAttribute("style","padding: 16px 0px; border-bottom: 1px; border-color: #E1E1E1; display: flex; ");
+    block.setAttribute("style","padding: 16px 0px; border-bottom: 1px solid #E1E1E1; border-color: #E1E1E1; display: flex; ");
     let profilePic = document.createElement("img");
     profilePic.setAttribute("src",comment.src);
     profilePic.setAttribute("style"," margin-right:32px; border-radius: 50%; width: 36px; height: 36px;");
@@ -73,12 +73,12 @@ function createCommentSmall(comment){
     date.setAttribute("style","")
 
     const topSection = document.createElement("div");
-    topSection.setAttribute("style","display: flex; justify-content: space-between; padding-bottom: 16px");
+    topSection.setAttribute("style","display: flex; justify-content: space-between; padding-bottom: 16px;");
     topSection.append(username);
     topSection.append(date);
     
     const rightSection = document.createElement("div");
-    rightSection.setAttribute("style","width: 100%; word-break: break-all;white-space: normal;");
+    rightSection.setAttribute("style","width: 100%;");
     rightSection.append(topSection);
     rightSection.append(content);
     block.append(rightSection);
@@ -88,7 +88,7 @@ function createCommentSmall(comment){
 
 function createCommentMedium(comment){
     const block = document.createElement("div");
-    block.setAttribute("style","padding: 36px 0px; border-bottom: 1px; border-color: #E1E1E1; display: flex; ");
+    block.setAttribute("style","padding: 36px 0px; border-bottom: 1px solid #E1E1E1; border-color: #E1E1E1; display: flex; ");
     let profilePic = document.createElement("img");
     profilePic.setAttribute("style","border-radius: 50%; width: 48px; height: 48px;");
     profilePic.setAttribute("src",comment.src);
@@ -107,12 +107,12 @@ function createCommentMedium(comment){
     date.setAttribute("style","")
     
     const topSection = document.createElement("div");
-    topSection.setAttribute("style","display: flex; justify-content: space-between; padding-bottom: 16px");
+    topSection.setAttribute("style","display: flex; justify-content: space-between; padding-bottom: 16px;");
     topSection.append(username);
     topSection.append(date);
     
     const rightSection = document.createElement("div");
-    rightSection.setAttribute("style","width: 100%; word-break: break-all;white-space: normal;");
+    rightSection.setAttribute("style","width: 100%; padding:16px;");
     rightSection.append(topSection);
     rightSection.append(content);
     block.append(rightSection);
@@ -122,9 +122,9 @@ function createCommentMedium(comment){
 
 function createCommentLarge(comment){
     const block = document.createElement("div");
-    block.setAttribute("style","padding: 36px 0px; border-bottom: 1px; border-color: #E1E1E1; display: flex; ");
-    let profilePic = document.createElement("img");
-    profilePic.setAttribute("style","border-radius: 50%; width: 48px; height: 48px;");
+    block.setAttribute("style","padding: 36px 0px; border-bottom: 1px solid #E1E1E1; border-color: #E1E1E1; display: flex; ");
+    let profilePic = dobcument.createElement("img");
+    profilePic.setAttriute("style","border-radius: 50%; width: 48px; height: 48px;");
     profilePic.setAttribute("src",comment.src);
     profilePic.style.backgroundColor = "#323232";
 
@@ -143,12 +143,12 @@ function createCommentLarge(comment){
 
     
     const topSection = document.createElement("div");
-    topSection.setAttribute("style","display: flex; justify-content: space-between; padding-bottom: 16px");
+    topSection.setAttribute("style","display: flex; justify-content: space-between; padding-bottom: 16px;");
     topSection.append(username);
     topSection.append(date);
     
     const rightSection = document.createElement("div");
-    rightSection.setAttribute("style","width: 100%; word-break: break-all;white-space: normal;");
+    rightSection.setAttribute("style","width: 100%; padding:16px;");
     rightSection.setAttribute("id","right-section");
     rightSection.append(topSection);
     rightSection.append(content);
@@ -160,10 +160,10 @@ function createCommentHtml(comment){
     let windowWidth = window.innerWidth;
 
     if (windowWidth > 320 || windowWidth<=767){
-        return createCommentLarge(comment);
+        return createCommentSmall(comment);
     }else if(windowWidth >767 ||windowWidth<=1280){
 
-        return createCommentLarge(comment);
+        return createCommentMedium(comment);
 
     }else if(windowWidth >1280){
         return createCommentLarge(comment);
@@ -247,3 +247,4 @@ window.addEventListener('resize', function(event) {
     }
 }, true);
 var currentScreenType = determineScreenType();
+recreateComments();

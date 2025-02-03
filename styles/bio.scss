@@ -3,8 +3,19 @@
     display: flex;
     flex-direction:column-reverse;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+a{
+    text-decoration: none;
 
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    p{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: #000000;
+        padding-top:16px;
+        line-height: 18px;
+    }
     header{
         .header{
             display: flex;
@@ -494,6 +505,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    p{
+        @include large-Body;
+    }
     header{
         .header{
             display: flex;
@@ -977,6 +991,9 @@
 }
 
 @media screen and (min-width: 1280px){
+    p{
+        @include large-Body;
+    }
     .gridLength{
         width: 1044px;
     }

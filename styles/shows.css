@@ -8,6 +8,10 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header .header {
     display: flex;
