@@ -4,9 +4,8 @@ body {
   padding: 0;
 }
 
-#comments {
-  display: flex;
-  flex-direction: column-reverse;
+p {
+  margin: 0;
 }
 
 a {
@@ -14,14 +13,6 @@ a {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  p {
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-    color: #000000;
-    padding-top: 16px;
-    line-height: 18px;
-  }
   header .header {
     display: flex;
     flex-direction: column;
@@ -110,146 +101,54 @@ a {
     top: 50%;
     width: 100%;
     height: 100%;
-    background-color: hsla(0, 0%, 20%, 0.5);
     transform: translate(0%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: hsla(0, 0%, 20%, 0.5);
   }
   main .menu .menu_section .menu_section_title {
-    padding-left: 16px;
+    padding: 16px;
   }
-  main .menu .menu_section .menu_section_title .menu_section_title_value {
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text {
+    width: 100%;
+  }
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_album {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0px;
+    color: white;
+  }
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_value1 {
     font-size: 24px;
     font-weight: 700;
     color: #FFFFFF;
+    margin: 0px;
+    color: white;
+    padding-top: 16px;
   }
-  main .content {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  main .content .content_box .content_box_about_title {
-    margin: 0;
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_value2 {
+    margin: 0px;
     font-size: 24px;
     font-weight: 700;
-    color: #000000;
-    padding-top: 24px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    color: white;
   }
-  main .content .content_box .content_box_about .content_box_about_picture {
-    margin: 0;
-    width: 100%;
-    height: auto;
+  main .menu .menu_section .menu_section_title .menu_section_title_value iframe {
     padding-top: 16px;
   }
-  main .content .content_box .content_box_about .content_box_about_quote {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 22px;
-  }
-  main .content .content_box .content_box_about .content_box_about_quote-author {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 22px;
-  }
-  main .content .content_box .content_box_about .content_box_about_section {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-    color: #000000;
-    line-height: 22px;
-    padding-top: 24px;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_left {
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-    color: #000000;
-    padding-top: 16px;
-    line-height: 18px;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_right {
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-    color: #000000;
-    padding-top: 16px;
-    line-height: 18px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_tite {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    width: 100%;
-    height: auto;
-    padding-top: 24px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo1 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo2 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo3 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo4 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo5 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo6 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo7 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo8 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo9 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-top: 16px;
-  }
-  main .comment {
+  main .shows {
     margin: 16px;
     padding: 0px;
+    padding-bottom: 16px;
   }
-  main .comment .comment_section {
+  main .shows .shows_section {
     margin: 0px;
     padding: 0;
   }
-  main .comment .comment_section .comment_section_title {
+  main .shows .shows_section .shows_section_title {
     font-size: 24px;
     font-weight: 700;
     color: #000000;
@@ -257,78 +156,9 @@ a {
     height: auto;
     padding-top: 24px;
   }
-  main .comment .comment_section .comment_section_page {
+  main .shows .shows_section .shows_section_page {
     margin: 0;
     padding: 0;
-    display: flex;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_profile {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    margin: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_name {
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 8px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock {
-    border-color: #E1E1E1;
-    border-radius: 4px;
-    width: calc(100% - 36px);
-    height: 36px;
-    background-color: #FAFAFA;
-    border-style: solid;
-    text-align: start;
-    padding: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock:active {
-    border-color: #323232;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_comment {
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 8px;
-    padding-top: 36px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-    color: #000000;
-    line-height: 22px;
-    border-radius: 4px;
-    border-color: #E1E1E1;
-    width: calc(100% - 36px);
-    background-color: #FAFAFA;
-    border: 2px solid #E1E1E1;
-    border-style: solid;
-    padding: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock:active {
-    border-color: #323232;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button {
-    padding: 8px 36px;
-    margin: 36px 0px;
-    border: 2px solid #E1E1E1;
-    border-radius: 4px;
-    width: 150px;
-    height: 40px;
-    background-color: #323232;
-    color: #ffffff;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button:hover {
-    border-color: #000000;
-    background-color: #000000;
   }
   footer {
     background-color: #323232;
@@ -474,15 +304,23 @@ a {
     padding-top: 16px;
     line-height: 18px;
   }
+  button {
+    padding: 8px;
+    margin: 36px 0px;
+    border-style: solid;
+    border-color: #323232;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    background-color: #323232;
+    color: #ffffff;
+  }
+  button:hover {
+    border-color: #000000;
+    background-color: #000000;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 22px;
-  }
   header .header {
     display: flex;
     flex-direction: row;
@@ -569,246 +407,63 @@ a {
     background-color: hsla(0, 0%, 20%, 0.5);
   }
   main .menu .menu_section .menu_section_title {
-    padding-left: 36px;
+    padding: 36px;
   }
-  main .menu .menu_section .menu_section_title .menu_section_title_value {
-    font-size: 68px;
-    font-weight: 700;
-    color: #FFFFFF;
-  }
-  main .content {
-    margin-left: 36px;
-    margin-right: 36px;
-  }
-  main .content .content_box .content_box_title {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    color: #000000;
-    padding-top: 44px;
-  }
-  main .content .content_box .content_box_about {
-    margin-left: 72px;
-    margin-right: 72px;
-  }
-  main .content .content_box .content_box_about .content_box_about_picture {
-    margin: 0;
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text {
     width: 100%;
-    height: auto;
-    padding-top: 36px;
   }
-  main .content .content_box .content_box_about .content_box_about_quote {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 32px;
-    padding-top: 36px;
-  }
-  main .content .content_box .content_box_about .content_box_about_quote-author {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 32px;
-  }
-  main .content .content_box .content_box_about .content_box_about_section {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 32px;
-    padding-top: 36px;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs {
-    padding: 36px 0;
-    display: flex;
-    justify-content: flex-start;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_left {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 22px;
-    padding-right: 24px;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_right {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 22px;
-  }
-  main .content .content_box .content_box_photo {
-    padding-top: 48px;
-    background-color: #FAFAFA;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_title {
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_value1 {
     margin: 0;
     font-size: 48px;
     font-weight: 700;
     color: #000000;
     line-height: 44px;
     padding-top: 48px;
-    width: 100%;
-    height: auto;
+    color: white;
+  }
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_value2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 44px;
     padding-top: 48px;
-    padding-bottom: 36px;
+    padding-top: 16px;
+    color: white;
   }
-  main .content .content_box .content_box_photo .content_box_photo_rows {
-    display: grid;
-    grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    row-gap: 36px;
-    -moz-column-gap: 36px;
-         column-gap: 36px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo1 {
-    width: 100%;
-    height: auto;
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_album {
     margin: 0;
-    grid-area: "1";
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 32px;
+    padding-top: 16px;
+    color: white;
   }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo2 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "2";
+  main .menu .menu_section .menu_section_title .menu_section_title_value iframe {
+    padding-top: 72px;
   }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo3 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "3";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo4 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "4";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo5 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "5";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo6 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "6";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo7 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "7";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo8 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "8";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo9 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "9";
-  }
-  main .comment {
+  main .shows {
     margin: 0px;
     padding: 0px 36px;
+    padding-bottom: 36px;
   }
-  main .comment .comment_section {
+  main .shows .shows_section {
     margin: 0px;
     padding: 0;
   }
-  main .comment .comment_section .comment_section_title {
+  main .shows .shows_section .shows_section_title {
     margin: 0;
     font-size: 48px;
     font-weight: 700;
     color: #000000;
     line-height: 44px;
     padding-top: 48px;
+    padding: 48px 0px;
   }
-  main .comment .comment_section .comment_section_page {
+  main .shows .shows_section .shows_section_page {
     margin: 0;
     padding: 0;
-    display: flex;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_profile {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin: 12px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_name {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 8px;
-    padding-top: 36px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock {
-    width: -moz-max-content;
-    width: max-content;
-    border-radius: 4px;
-    width: calc(100% - 40px);
-    height: 48px;
-    border: 2px solid #E1E1E1;
-    background-color: #FAFAFA;
-    border-style: solid;
-    text-align: start;
-    padding: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock:active {
-    border-color: #323232;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_comment {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 8px;
-    padding-top: 36px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock {
-    border: 2px solid #E1E1E1;
-    border-radius: 4px;
-    display: inline-block;
-    width: calc(100% - 40px);
-    height: 120px;
-    background-color: #FAFAFA;
-    border-style: solid;
-    padding: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock:active {
-    border-color: #323232;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button {
-    padding: 8px 36px;
-    margin: 36px 0px;
-    border-style: solid;
-    border-color: #323232;
-    border-radius: 4px;
-    width: 150px;
-    height: 40px;
-    background-color: #323232;
-    color: #ffffff;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button:hover {
-    border-color: #000000;
-    background-color: #000000;
   }
   footer {
     background-color: #323232;
@@ -971,16 +626,23 @@ a {
     color: #ffffff;
     line-height: 18px;
   }
+  button {
+    padding: 8px;
+    border-style: solid;
+    border-color: #323232;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    background-color: #323232;
+    color: #ffffff;
+  }
+  button:hover {
+    border-color: #000000;
+    background-color: #000000;
+  }
 }
 @media screen and (min-width: 1280px) {
-  p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 22px;
-  }
-  .gridLength, main .menu .menu_section .menu_section_title .menu_section_title_value, header .header {
+  .gridLength, header .header {
     width: 1044px;
   }
   header {
@@ -1081,242 +743,60 @@ a {
     justify-content: center;
   }
   main .menu .menu_section .menu_section_title .menu_section_title_value {
-    font-size: 68px;
-    font-weight: 700;
-    color: #FFFFFF;
-  }
-  main .content {
     display: flex;
-    justify-content: center;
-  }
-  main .content .content_box {
     width: 1044px;
   }
-  main .content .content_box .content_box_title {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    color: #000000;
-    padding-top: 44px;
-  }
-  main .content .content_box .content_box_about {
-    margin-left: 72px;
-    margin-right: 72px;
-  }
-  main .content .content_box .content_box_about .content_box_about_picture {
-    margin: 0;
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text {
     width: 100%;
-    height: auto;
-    padding-top: 36px;
   }
-  main .content .content_box .content_box_about .content_box_about_quote {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 32px;
-    padding-top: 36px;
-  }
-  main .content .content_box .content_box_about .content_box_about_quote-author {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 32px;
-  }
-  main .content .content_box .content_box_about .content_box_about_section {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 32px;
-    padding-top: 48px;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs {
-    padding: 36px 0;
-    display: flex;
-    justify-content: flex-start;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_left {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 22px;
-    padding-right: 24px;
-  }
-  main .content .content_box .content_box_about .content_box_about_paragraphs .content_box_about_paragraphs_right {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 22px;
-  }
-  main .content .content_box .content_box_photo {
-    background-color: #FAFAFA;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_title {
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_value1 {
     margin: 0;
     font-size: 48px;
     font-weight: 700;
     color: #000000;
     line-height: 44px;
     padding-top: 48px;
-    height: auto;
-    padding-top: 48px;
-    padding-bottom: 36px;
+    color: white;
   }
-  main .content .content_box .content_box_photo .content_box_photo_rows {
-    display: grid;
-    grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    row-gap: 36px;
-    -moz-column-gap: 36px;
-         column-gap: 36px;
-    padding-bottom: 36px;
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo1 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "1";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo2 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "2";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo3 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "3";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo4 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "4";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo5 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "5";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo6 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "6";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo7 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "7";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo8 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "8";
-  }
-  main .content .content_box .content_box_photo .content_box_photo_rows .content_box_photo_rows_photo9 {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    grid-area: "9";
-  }
-  main .comment {
-    margin: 0px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  main .comment .comment_section {
-    width: 1044px;
-    margin: 0px;
-    padding: 0;
-  }
-  main .comment .comment_section .comment_section_title {
+  main .menu .menu_section .menu_section_title .menu_section_title_value .menu_section_title_value_text .menu_section_title_value_text_value2 {
     margin: 0;
     font-size: 48px;
     font-weight: 700;
     color: #000000;
     line-height: 44px;
     padding-top: 48px;
+    padding-top: 16px;
+    color: white;
   }
-  main .comment .comment_section .comment_section_page {
-    margin: 0;
+  main .menu .menu_section .menu_section_title .menu_section_title_value iframe {
+    padding: 72px;
+  }
+  main .shows {
+    margin: 0px;
     padding: 0;
     display: flex;
+    justify-content: center;
   }
-  main .comment .comment_section .comment_section_page .comment_section_page_profile {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    margin: 24px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add {
+  main .shows .shows_section {
+    width: 1044px;
+    margin: 0px;
+    padding: 48px 0px;
     display: flex;
-    flex-direction: column;
+  }
+  main .shows .shows_section .shows_section_title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 44px;
+    padding-top: 48px;
+    padding: 0 48px;
+    padding-top: 8px;
+  }
+  main .shows .shows_section .shows_section_page {
+    margin: 0;
+    padding: 0;
     width: 100%;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_name {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 8px;
-    padding-top: 36px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock {
-    border: 2px solid #E1E1E1;
-    border-radius: 4px;
-    width: calc(100% - 36px);
-    height: 48px;
-    background-color: #FAFAFA;
-    border-style: solid;
-    text-align: start;
-    padding: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock:active {
-    border-color: #323232;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_comment {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 8px;
-    padding-top: 36px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock {
-    border: 2px solid #E1E1E1;
-    width: calc(100% - 36px);
-    height: 120px;
-    background-color: #FAFAFA;
-    border-style: solid;
-    padding: 16px;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock:active {
-    border-color: #323232;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button {
-    padding: 8px 36px;
-    margin: 36px 0px;
-    border-style: solid;
-    border-color: #323232;
-    border-radius: 4px;
-    width: 150px;
-    height: 40px;
-    background-color: #323232;
-    color: #ffffff;
-  }
-  main .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button:hover {
-    border-color: #000000;
-    background-color: #000000;
   }
   footer {
     background-color: #323232;
@@ -1482,4 +962,19 @@ a {
     color: #ffffff;
     line-height: 18px;
   }
-}/*# sourceMappingURL=bio.css.map */
+  button {
+    padding: 8px;
+    margin: 36px 0px;
+    border-style: solid;
+    border-color: #323232;
+    border-radius: 4px;
+    width: 150px;
+    height: 40px;
+    background-color: #323232;
+    color: #ffffff;
+  }
+  button:hover {
+    border-color: #000000;
+    background-color: #000000;
+  }
+}/*# sourceMappingURL=shows.css.map */
