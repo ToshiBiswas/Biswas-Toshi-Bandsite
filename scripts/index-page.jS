@@ -1,4 +1,3 @@
-import CommentApi from "./comments_api";
 
 class Time{
 

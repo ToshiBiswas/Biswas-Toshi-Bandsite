@@ -4,9 +4,11 @@ class CommentApi{
     static baseUrl = "https://unit-2-project-api-25c1595833b2.herokuapp.com/";
     static id = null;
     static async register(){
-        if (this.id == null){
+        this.id = sessionStorage.getItem("sessionId");
+        if (typeof this.id !== "string"){
             const paragraph = await axios.get("https://unit-2-project-api-25c1595833b2.herokuapp.com/"+"register");
             this.id = paragraph.data.api_key;
+            sessionStorage.setItem("sessionId", this.id);
         }
 
     }
@@ -34,7 +36,6 @@ class CommentApi{
     }
 }
 
-export default CommentApi;
 
 (async () => {
     await CommentApi.register(); // Will trigger initialization if not already 
