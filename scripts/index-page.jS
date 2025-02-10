@@ -1,5 +1,6 @@
 
 class Time{
+
     #day
     #month
     #year
@@ -42,14 +43,9 @@ class Comment{
     getTime(){
         return String(this.#time.getMonth()) + "/" + String(this.#time.getDay())+ "/" + String(this.#time.getYear())
     }
+
 }
 let comments = [];
-comments.push(new Comment("Victor Pinto","I can't stop listening. Every time I hear one of their songs the vocals it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",new Time("20","10","2023")));
-comments.push(new Comment("Christina Cabrera", "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",new Time("28","10","2023")));
-comments.push(new Comment("Isaac Tadesse", "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",new Time("02","11","2023")));
-comments[0].src = "assets/Images/handtinyblack.gif";
-comments[1].src = "assets/Images/handtinyblack.gif";
-comments[2].src = "assets/Images/handtinyblack.gif";
 
 function createCommentSmall(comment){
     const block = document.createElement("div");
@@ -123,8 +119,8 @@ function createCommentMedium(comment){
 function createCommentLarge(comment){
     const block = document.createElement("div");
     block.setAttribute("style","padding: 36px 0px; border-bottom: 1px solid #E1E1E1; border-color: #E1E1E1; display: flex; ");
-    let profilePic = dobcument.createElement("img");
-    profilePic.setAttriute("style","border-radius: 50%; width: 48px; height: 48px;");
+    let profilePic = document.createElement("img");
+    profilePic.setAttribute("style","border-radius: 50%; width: 48px; height: 48px;");
     profilePic.setAttribute("src",comment.src);
     profilePic.style.backgroundColor = "#323232";
 
@@ -158,7 +154,6 @@ function createCommentLarge(comment){
 
 function createCommentHtml(comment){
     let windowWidth = window.innerWidth;
-
     if (windowWidth > 320 || windowWidth<=767){
         return createCommentSmall(comment);
     }else if(windowWidth >767 ||windowWidth<=1280){
@@ -174,19 +169,16 @@ function createCommentHtml(comment){
 }
 
 
-function createComment(username,comment){
-    const today = new Date();
-    commentObj = new Comment(username,comment,new Time(today.getUTCDate(), today.getUTCMonth(), today.getUTCFullYear()));
+async function createComment(username,comment){
+    const response = await CommentApi.addComments(username, comment);
+    const today = new Date(response.timestamp);
+    let commentObj = new Comment(username,comment,new Time(today.getDate(),String(Number(today.getMonth())+1), today.getFullYear()));
     commentObj.src = "./assets/images/Mohan-muruge.jpg";
-
     comments.push(commentObj);
     var object = createCommentHtml(commentObj);
     document.getElementById("comments").appendChild(object);
 }
-function onClick(){
-    event.preventDefault();
 
-}
 const form = document.getElementById("itemForm");
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -208,7 +200,18 @@ form.addEventListener('submit', function (event) {
     document.getElementById("comment").value = "";
     document.getElementById("username").value = "";
   });
-  function recreateComments(){
+async function getCommentsFromApi(){
+    comments.length = 0;
+    const response = await CommentApi.getComments();
+    for(let i = 0;i< response.length; i++){
+        let dateObj = new Date(response[i].timestamp);
+        let commentObj = new Comment(response[i].name,response[i].comment,new Time(dateObj.getDate(), String(Number(dateObj.getMonth())+1), dateObj.getFullYear()));
+        commentObj.src = "./assets/Images/handtinyblack.gif";
+        comments.push(commentObj);
+    }
+    recreateComments();
+}
+  async function recreateComments(){
     const myNode = document.getElementById("comments");
     let windowWidth = window.innerWidth;
     if(myNode != null){
@@ -216,7 +219,6 @@ form.addEventListener('submit', function (event) {
             myNode.removeChild(myNode.lastChild);
         }
     }
-
     if (windowWidth > 320 && windowWidth<=767){
         comments.forEach((s) =>{myNode.appendChild(createCommentSmall(s))});
     }else if(windowWidth >767 && windowWidth<=1280){
@@ -247,4 +249,6 @@ window.addEventListener('resize', function(event) {
     }
 }, true);
 var currentScreenType = determineScreenType();
+getCommentsFromApi();
+
 recreateComments();

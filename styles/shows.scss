@@ -28,66 +28,76 @@ a{
                 .header_nav_left{
                     width: 100%;
                     display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    .header_nav_left_biography{
-                        margin:0;
-                        padding:16px 0;
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #AFAFAF;
+                    height: 100%;
+                    a{
                         width: 100%;
-                        text-align: center;
-                        &:hover{
-                            color: #ffffff;
-                        
+                        height: 100%;
+                        .header_nav_left_biography{
+                            margin:0;
+                            padding:16px 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #AFAFAF;
+                            width: 100%;
+                            text-align: center;
+                            &:hover{
+                                color: #ffffff;
+                            
+                            }
+                            &:active {
+                                font-weight:700;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
+                                border-bottom: 5px;
+                                border-style: solid;
+                                padding: 16px 0 11px 0;
+                                border-color: #E1E1E1;
+                            }
+    
                         }
-                        &:active {
-                            font-weight:700;
-                            border-top: 0;
-                            border-left: 0;
-                            border-right: 0;
-                            border-bottom: 5px;
-                            border-style: solid;
-                            padding: 16px 11px 0;
-                            border-color: #E1E1E1;
-                        }
-
                     }
+
                 }
                 .header_nav_right{
                     width: 100%;
                     display: flex;
-                    justify-content: center;
-
-                    .header_nav_right_shows{
-                        margin:0;
-                        padding:16px 0;
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: #AFAFAF;
+                    height: 100%;
+                    a{
                         width: 100%;
-                        text-align: center;
-                        &:hover{
-                            color: #ffffff;
-                        
-                        }
-                        &:active {
-                            font-weight:700;
-                            border-top: 0;
-                            border-left: 0;
-                            border-right: 0;
-                            border-bottom: 5px;
-                            border-style: solid;
-                            padding: 16px 11px 0;
-                            border-color: #E1E1E1;
+                        height: 100%;
+                        .header_nav_right_shows{
+                            margin:0;
+                            padding:16px 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #AFAFAF;
+                            width: 100%;
+                            text-align: center;
+                            &:hover{
+                                color: #ffffff;
+                            
+                            }
+                            &:active {
+                                font-weight:700;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
+                                border-bottom: 5px;
+                                border-style: solid;
+                                padding: 16px 0 11px 0;
+                                border-color: #E1E1E1;
+                            }
+    
                         }
                     }
+
                 }
 
             }
         }
     }
+
     main{
         .menu{
             position: relative;
