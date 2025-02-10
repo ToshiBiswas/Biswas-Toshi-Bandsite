@@ -48,12 +48,6 @@ class Shows{
     }
 }
 let shows = [];
-shows.push(new Shows("San Francisco, CA","Ronald Lane","Mon", "Sept", "09", "2024"));
-shows.push(new Shows("San Francisco, CA","Pier 3 East","Tue", "Sept", "17", "2024"));
-shows.push(new Shows("San Francisco, CA","View Lounge","Sat", "Oct", "12", "2024"));
-shows.push(new Shows("San Francisco, CA","Hyatt Agency","Sat", "Nov", "16", "2024"));
-shows.push(new Shows("San Francisco, CA","View Lounge","Fri", "Nov", "29", "2024"));
-shows.push  (new Shows("San Francisco, CA","View Lounge","Wed", "Dec", "18", "2024"))
 function createTopBar(){
     const block = document.createElement("div");
     block.setAttribute("style", "align-items: center;display:flex; justify-content:flex-start; border-bottom: 2px solid #AFAFAF")
@@ -166,12 +160,52 @@ function setShow(){
         myNode.appendChild(createTopBar())
         shows.forEach((s) =>{myNode.appendChild(createShowMedium(s))});
 
-    }   
+    }
+    
+}
+ function determineDayOfWeek(day){
+    switch(day){
+        case 0:
+            return "Sunday";
+
+        case 1:
+            return "Monday";
+
+        case 2:
+            return "Tuesday";
+
+        case 3:
+            return "Wednesday";
+
+        case 4:
+            return "Thursday";
+
+        case 5:
+            return "Friday";
+
+        case 6:
+            return "Saturday";
+
+        default:
+            return "unknown";
+
+    }
+}
+async function getShowFromAPI(){
+    shows.length = 0;
+    const response = await CommentApi.getShowDates();
+    for(let i = 0;i< response.length; i++){
+        let dateObj = new Date(response[i].date);
+
+        let commentObj = new Shows(response[i].location,response[i].place,(determineDayOfWeek(dateObj.getDay())),String(dateObj.getDate()),String(dateObj.getMonth()),String(dateObj.getFullYear()));
+        commentObj.src = "./assets/Images/handtinyblack.gif";
+        shows.push(commentObj);
+    }
+    setShow();
 }
 
-
 const body = document.getElementsByTagName("body")[0];
-setShow();
+getShowFromAPI();
 window.addEventListener('resize', function(event) {
     event.preventDefault();
     var updatedSize = determineScreenType();

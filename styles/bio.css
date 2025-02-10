@@ -43,10 +43,13 @@ a {
   header .header .header_nav .header_nav_left {
     width: 100%;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    height: 100%;
   }
-  header .header .header_nav .header_nav_left .header_nav_left_biography {
+  header .header .header_nav .header_nav_left a {
+    width: 100%;
+    height: 100%;
+  }
+  header .header .header_nav .header_nav_left a .header_nav_left_biography {
     margin: 0;
     padding: 16px 0;
     font-size: 14px;
@@ -55,25 +58,29 @@ a {
     width: 100%;
     text-align: center;
   }
-  header .header .header_nav .header_nav_left .header_nav_left_biography:hover {
+  header .header .header_nav .header_nav_left a .header_nav_left_biography:hover {
     color: #ffffff;
   }
-  header .header .header_nav .header_nav_left .header_nav_left_biography:active {
+  header .header .header_nav .header_nav_left a .header_nav_left_biography:active {
     font-weight: 700;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 5px;
     border-style: solid;
-    padding: 16px 11px 0;
+    padding: 16px 0 11px 0;
     border-color: #E1E1E1;
   }
   header .header .header_nav .header_nav_right {
     width: 100%;
     display: flex;
-    justify-content: center;
+    height: 100%;
   }
-  header .header .header_nav .header_nav_right .header_nav_right_shows {
+  header .header .header_nav .header_nav_right a {
+    width: 100%;
+    height: 100%;
+  }
+  header .header .header_nav .header_nav_right a .header_nav_right_shows {
     margin: 0;
     padding: 16px 0;
     font-size: 14px;
@@ -82,17 +89,17 @@ a {
     width: 100%;
     text-align: center;
   }
-  header .header .header_nav .header_nav_right .header_nav_right_shows:hover {
+  header .header .header_nav .header_nav_right a .header_nav_right_shows:hover {
     color: #ffffff;
   }
-  header .header .header_nav .header_nav_right .header_nav_right_shows:active {
+  header .header .header_nav .header_nav_right a .header_nav_right_shows:active {
     font-weight: 700;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 5px;
     border-style: solid;
-    padding: 16px 11px 0;
+    padding: 16px 0 11px 0;
     border-color: #E1E1E1;
   }
   main .menu {

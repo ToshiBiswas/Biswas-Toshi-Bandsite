@@ -34,6 +34,16 @@ class CommentApi{
         return response.data;
 
     }
+    static async getShowDates(){
+        const response = await axios.get("https://unit-2-project-api-25c1595833b2.herokuapp.com/"+"showdates/"+"?api_key="+String(CommentApi.id));
+        
+        console.log(response);
+        response.data.sort((a, b) => {
+            return b.posted - a.posted;
+        });
+    
+        return response.data;
+    }
 }
 
 
